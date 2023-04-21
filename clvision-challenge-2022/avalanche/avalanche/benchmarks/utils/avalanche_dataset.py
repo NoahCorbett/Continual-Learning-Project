@@ -225,6 +225,7 @@ class AvalancheDataset(IDatasetWithTargets[T_co, TTargetType], Dataset[T_co]):
             else:
                 dataset_type = AvalancheDatasetType.UNDEFINED
 
+
         if dataset_type != AvalancheDatasetType.UNDEFINED and (
             collate_fn is not None or targets_adapter is not None
         ):

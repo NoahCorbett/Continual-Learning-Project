@@ -51,7 +51,7 @@ mainstream Linux distribution.
 The starting template for the object classification track is based on the tried and tested strategies from Avalanche.
 
 In particular, the starting template can be found in 
-[`starting_template_instance_classification.py`](starting_template_instance_classification.py). The 
+[`starting_template_instance_classification.py`](base_model_instance_classification.py). The 
 default template implements a working train/eval loop that uses the
 [Naive](https://avalanche-api.continualai.org/en/latest/generated/avalanche.training.Naive.html) strategy.
 

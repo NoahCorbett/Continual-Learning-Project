@@ -4,6 +4,8 @@ DEFAULT_DEMO_CLASS_ORDER_SEED = 20220307
 DEFAULT_DEMO_TRAIN_JSON = 'ego_objects_demo_train.json'
 DEFAULT_DEMO_TEST_JSON = 'ego_objects_demo_test.json'
 
+
+
 DEFAULT_CHALLENGE_CLASS_ORDER_SEED = DEFAULT_DEMO_CLASS_ORDER_SEED
 DEFAULT_CHALLENGE_TRAIN_JSON = 'ego_objects_challenge_train.json'
 DEFAULT_CHALLENGE_TEST_JSON = 'ego_objects_challenge_test.json'

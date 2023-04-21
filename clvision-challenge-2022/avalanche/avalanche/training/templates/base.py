@@ -100,7 +100,6 @@ class BaseTemplate:
         self._eval_streams = eval_streams
 
         self._before_training(**kwargs)
-
         for self.experience in experiences:
             self._before_training_exp(**kwargs)
             self._train_exp(self.experience, eval_streams, **kwargs)
@@ -200,7 +199,6 @@ class BaseTemplate:
         cb_supported = set(get_plugins_from_object(self.PLUGIN_CLASS))
         for p in ps:
             cb_p = set(get_plugins_from_object(p))
-
             if not cb_p.issubset(cb_supported):
                 warnings.warn(
                     f"Plugin {p} implements incompatible callbacks for template"

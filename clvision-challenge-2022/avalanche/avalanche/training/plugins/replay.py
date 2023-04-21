@@ -74,6 +74,7 @@ class ReplayPlugin(SupervisedPlugin):
         the training dataset
         """
         if len(self.storage_policy.buffer) == 0:
+
             # first experience. We don't use the buffer, no need to change
             # the dataloader.
             return

@@ -85,11 +85,9 @@ def challenge_classification_benchmark(
         train=(CHALLENGE_CLASSIFICATION_FORCED_TRANSFORMS, None),
         eval=(CHALLENGE_CLASSIFICATION_FORCED_TRANSFORMS, None)
     )
-
     if train_json_name is None:
         train_json_name = DEFAULT_CHALLENGE_TRAIN_JSON
     train_ego_api = EgoObjects(str(Path(dataset_path) / train_json_name))
-
     if test_json_name is None:
         test_json_name = DEFAULT_CHALLENGE_TEST_JSON
     test_ego_api = EgoObjects(str(Path(dataset_path) / test_json_name))
@@ -112,6 +110,7 @@ def challenge_classification_benchmark(
 
     # validation_cls_imgs = defaultdict(list)
     val_img_ids = set()
+
     if n_validation_videos > 0:
         random.seed(validation_video_selection_seed)
         class_to_videos_dict = ChallengeClassificationDataset.class_to_videos(
@@ -150,7 +149,6 @@ def challenge_classification_benchmark(
         transform_groups=base_transforms,
         initial_transform_group='eval'
     ).freeze_transforms()
-
     unique_classes = set(avl_train_dataset.targets)
     base_n_classes = len(unique_classes) // n_exps
     remainder_n_classes = len(unique_classes) % n_exps
@@ -270,7 +268,7 @@ def challenge_classification_benchmark(
         benchmark.n_classes = n_classes
 
     # Check the complex benchmark manipulations (like creating the validation
-    # set) hasn't changed the order of classes.
+    # set) hasn't changed the order fof classes.
     assert _hash_classes_order(benchmark, 'train') == orig_targets_order_hash
     if 'valid' in benchmark.streams:
         assert _hash_classes_order(benchmark, 'valid') == \
