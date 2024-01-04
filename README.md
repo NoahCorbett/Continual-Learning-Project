@@ -1,10 +1,10 @@
-# CPVR 2022 Workshop for Continual Learning
+# 3rd CLVision CVPR Project
 
 
 
 ## Overview
 
-This gitlab project is based on the CVPR 3rd edition [devkit](https://github.com/ContinualAI/clvision-challenge-2022) which primarly includes the avalanche library and starting templates for the challenge track. In addition there are the models I developed base_model_instance_classification.py and new_model_instance_classification.py As well as the smaller dataset json ego_objects_demo_test - 15 classes.json and ego_objects_demo_test - 15 classes.json
+This gitlab project is based on the CLVision 3rd edition [devkit](https://github.com/ContinualAI/clvision-challenge-2022) which primarly includes the avalanche library and starting templates for the challenge track. In addition there are the models I developed base_model_instance_classification.py and new_model_instance_classification.py As well as the smaller dataset json ego_objects_demo_test - 15 classes.json and ego_objects_demo_test - 15 classes.json
 
 ## Requirements
 
