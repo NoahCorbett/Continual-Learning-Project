@@ -1,4 +1,4 @@
-# CMPT 489 Continual Learning
+# CPVR 2022 Workshop for Continual Learning
 
 
 
